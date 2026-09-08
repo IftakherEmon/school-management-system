@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Welcome to ABC High School - Clean & Basic Homepage.">
+    <title>Home - School Management Website</title>
+    <link rel="icon" type="image/png" href="images/logo.png">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header id="main-header">
+        <div class="container header-container">
+            <div class="school-info">
+                <img src="images/logo.png" alt="ABC High School Logo" class="logo-img" title="Double click logo to dynamically change the banner image!">
+                <span class="school-title">ABC High School</span>
+            </div>
+            
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link active">Home</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li><a href="admission.html" class="nav-link">Admission</a></li>
+                    <li><a href="teachers.html" class="nav-link">Teachers</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        
+        <div class="theme-controls">
+            <button id="theme-toggle-btn" class="btn btn-secondary">🌙 Dark Mode</button>
+            <button id="welcome-alert-btn" class="btn">👋 Show Welcome Alert</button>
+        </div>
+
+        <section class="banner-container">
+            <img src="images/banner.jpg" alt="ABC High School Banner" class="banner-img">
+            <div class="banner-text">
+                <h2 id="welcome-banner-text">Welcome to ABC High School</h2>
+                <p>Nurturing minds and shaping values since 1995. Explore our courses and register today!</p>
+            </div>
+        </section>
+
+        <section class="section-card">
+            <h2>About Our Institution</h2>
+            <p>
+                At ABC High School, we aim to provide high-quality education in a supportive and challenging environment. We encourage students to discover their potentials and develop necessary life skills.
+            </p>
+            <div class="grid-layout">
+                <div class="col-1-2" style="background-color: #edf2f7; padding: 15px; border-radius: 4px;">
+                    <h3>1,250+</h3>
+                    <p>Enrolled Students</p>
+                </div>
+                <div class="col-1-2" style="background-color: #edf2f7; padding: 15px; border-radius: 4px;">
+                    <h3>50+</h3>
+                    <p>Qualified Teachers</p>
+                </div>
+            </div>
+        </section>
+
+        <div class="grid-layout">
+            <article class="section-card col-1-2">
+                <h3>Principal's Message</h3>
+                <div style="display: flex; gap: 15px; flex-wrap: wrap;">
+                    <img src="images/teacher1.jpg" alt="Principal Photo" style="width: 100px; height: 100px; border-radius: 50%; object-fit: cover;">
+                    <div style="flex: 1; min-width: 200px;">
+                        <p style="font-style: italic;">
+                            "Education is the ticket to the future, for tomorrow belongs to those who prepare for it today. We look forward to welcoming you to our school community."
+                        </p>
+                        <strong>-Sadik Tasrif Anubhove, Principal</strong>
+                    </div>
+                </div>
+            </article>
+
+            <section class="section-card col-1-2" style="text-align: center;">
+                <h3>Current Date & Time</h3>
+                <div id="digital-clock">
+                    Loading Clock...
+                </div>
+            </section>
+        </div>
+
+    </main>
+
+    <button id="scroll-top-btn" title="Go to top">▲</button>
+
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-section">
+                <h4>ABC High School</h4>
+                <p>Providing excellence in education since 1995.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="admission.html">Admissions</a></li>
+                    <li><a href="teachers.html">Our Teachers</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Affiliation</h4>
+                <p><a href="https://www.dhakaeducationboard.gov.bd/" target="_blank" rel="noopener noreferrer">Education Board website ↗</a></p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 ABC High School. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
