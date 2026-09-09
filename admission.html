@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Online Student Admission - ABC High School registration form.">
+    <title>Admission - School Management Website</title>
+    <link rel="icon" type="image/png" href="images/logo.png">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header id="main-header">
+        <div class="container header-container">
+            <div class="school-info">
+                <img src="images/logo.png" alt="ABC High School Logo" class="logo-img" title="Double click logo to dynamically change the banner image!">
+                <span class="school-title">ABC High School</span>
+            </div>
+            
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li><a href="admission.html" class="nav-link active">Admission</a></li>
+                    <li><a href="teachers.html" class="nav-link">Teachers</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+
+        <div class="theme-controls">
+            <button id="theme-toggle-btn" class="btn btn-secondary">🌙 Dark Mode</button>
+        </div>
+
+        <section class="banner-container">
+            <img src="images/banner.jpg" alt="Admission Banner" class="banner-img">
+            <div class="banner-text">
+                <h2>Student Admission Portal</h2>
+                <p>Register online by filling out the details below. Minimum age limit is 5 years old.</p>
+            </div>
+        </section>
+
+        <section class="section-card">
+            <h2>Student Registration Form</h2>
+            <p style="color: #666; margin-bottom: 20px;">* Fields marked with an asterisk are required.</p>
+            
+            <div id="welcome-banner-text" style="font-size: 18px; margin-bottom: 15px; text-align: center;"></div>
+
+            <form id="admission-form" novalidate>
+                
+                <fieldset style="margin-bottom: 20px; padding: 15px; border: 1px solid #cccccc; border-radius: 5px;">
+                    <legend style="padding: 0 10px; font-weight: bold; color: #1a365d;">Student Details</legend>
+                    
+                    <div class="grid-layout">
+                        <div class="form-group col-1-2">
+                            <label for="student-name">Student Name *</label>
+                            <input type="text" id="student-name" placeholder="Enter full name" required>
+                            <span id="student-name-error" class="error-msg"></span>
+                            
+                            <div id="name-preview" style="display: none; margin-top: 5px; font-size: 13px; color: #3182ce;"></div>
+                        </div>
+
+                        <div class="form-group col-1-2">
+                            <label for="dob">Date of Birth *</label>
+                            <input type="date" id="dob" required>
+                            <span id="dob-error" class="error-msg"></span>
+                            
+                            <div id="age-display" style="margin-top: 5px; font-size: 13px;"></div>
+                        </div>
+                    </div>
+
+                    <div class="grid-layout" style="margin-top: 10px;">
+                        <div class="form-group col-1-2">
+                            <label for="gender">Gender *</label>
+                            <select id="gender" required>
+                                <option value="">-- Select Gender --</option>
+                                <option value="male">Male</option>
+                                <option value="female">Female</option>
+                                <option value="other">Other</option>
+                            </select>
+                            <span id="gender-error" class="error-msg"></span>
+                        </div>
+
+                        <div class="form-group col-1-2">
+                            <label for="blood-group">Blood Group</label>
+                            <select id="blood-group">
+                                <option value="">-- Select Blood Group --</option>
+                                <option value="A+">A+</option>
+                                <option value="A-">A-</option>
+                                <option value="B+">B+</option>
+                                <option value="B-">B-</option>
+                                <option value="O+">O+</option>
+                                <option value="O-">O-</option>
+                                <option value="AB+">AB+</option>
+                                <option value="AB-">AB-</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="grid-layout" style="margin-top: 10px;">
+                        <div class="form-group col-1-2">
+                            <label for="class">Admission Class *</label>
+                            <select id="class" required>
+                                <option value="">-- Select Class --</option>
+                                <option value="6">Class 6</option>
+                                <option value="7">Class 7</option>
+                                <option value="8">Class 8</option>
+                                <option value="9">Class 9</option>
+                                <option value="10">Class 10</option>
+                            </select>
+                            <span id="class-error" class="error-msg"></span>
+                        </div>
+
+                        <div class="form-group col-1-2">
+                            <label for="section">Section Preference *</label>
+                            <select id="section" required>
+                                <option value="">-- Select Section --</option>
+                                <option value="A">Section A</option>
+                                <option value="B">Section B</option>
+                                <option value="C">Section C</option>
+                            </select>
+                            <span id="section-error" class="error-msg"></span>
+                        </div>
+                    </div>
+                </fieldset>
+
+                <fieldset style="margin-bottom: 20px; padding: 15px; border: 1px solid #cccccc; border-radius: 5px;">
+                    <legend style="padding: 0 10px; font-weight: bold; color: #1a365d;">Parents Details</legend>
+                    
+                    <div class="grid-layout">
+                        <div class="form-group col-1-2">
+                            <label for="father-name">Father's Name *</label>
+                            <input type="text" id="father-name" placeholder="Enter father's name" required>
+                            <span id="father-name-error" class="error-msg"></span>
+                        </div>
+
+                        <div class="form-group col-1-2">
+                            <label for="mother-name">Mother's Name *</label>
+                            <input type="text" id="mother-name" placeholder="Enter mother's name" required>
+                            <span id="mother-name-error" class="error-msg"></span>
+                        </div>
+                    </div>
+                </fieldset>
+
+                <fieldset style="margin-bottom: 20px; padding: 15px; border: 1px solid #cccccc; border-radius: 5px;">
+                    <legend style="padding: 0 10px; font-weight: bold; color: #1a365d;">Contact Details & Credentials</legend>
+                    
+                    <div class="grid-layout">
+                        <div class="form-group col-1-2">
+                            <label for="phone">Phone Number *</label>
+                            <input type="tel" id="phone" placeholder="Enter 10-15 digit phone number" required>
+                            <span id="phone-error" class="error-msg"></span>
+                        </div>
+
+                        <div class="form-group col-1-2">
+                            <label for="email">Email *</label>
+                            <input type="email" id="email" placeholder="e.g. parent@email.com" required>
+                            <span id="email-error" class="error-msg"></span>
+                        </div>
+                    </div>
+
+                    <div class="form-group" style="margin-top: 10px;">
+                        <label for="address">Mailing Address *</label>
+                        <textarea id="address" rows="3" placeholder="Enter full address details" required></textarea>
+                        <span id="address-error" class="error-msg"></span>
+                    </div>
+
+                    <div class="grid-layout" style="margin-top: 10px;">
+                        <div class="form-group col-1-2">
+                            <label for="password">Password * (Min 6 chars)</label>
+                            <input type="password" id="password" placeholder="Create a password" required>
+                            <span id="password-error" class="error-msg"></span>
+                        </div>
+
+                        <div class="form-group col-1-2">
+                            <label for="confirm-password">Confirm Password *</label>
+                            <input type="password" id="confirm-password" placeholder="Re-enter password" required>
+                            <span id="confirm-password-error" class="error-msg"></span>
+                        </div>
+                    </div>
+                </fieldset>
+
+                <div class="form-actions">
+                    <button type="reset" class="btn btn-secondary" style="margin-right: 10px;">Reset Button</button>
+                    <button type="submit" class="btn">Submit Button</button>
+                </div>
+
+            </form>
+        </section>
+
+    </main>
+
+    <button id="scroll-top-btn" title="Go to top">▲</button>
+
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-section">
+                <h4>ABC High School</h4>
+                <p>Providing excellence in education since 1995.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="admission.html">Admissions</a></li>
+                    <li><a href="teachers.html">Our Teachers</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Affiliation</h4>
+                <p><a href="https://www.dhakaeducationboard.gov.bd/" target="_blank" rel="noopener noreferrer">Education Board website ↗</a></p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 ABC High School. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

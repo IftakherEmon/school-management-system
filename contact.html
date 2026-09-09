@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact us - ABC High School address, map, email, phone, and contact form.">
+    <title>Contact Us - School Management Website</title>
+    <link rel="icon" type="image/png" href="images/logo.png">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header id="main-header">
+        <div class="container header-container">
+            <div class="school-info">
+                <img src="images/logo.png" alt="ABC High School Logo" class="logo-img" title="Double click logo to dynamically change the banner image!">
+                <span class="school-title">ABC High School</span>
+            </div>
+            
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li><a href="admission.html" class="nav-link">Admission</a></li>
+                    <li><a href="teachers.html" class="nav-link">Teachers</a></li>
+                    <li><a href="contact.html" class="nav-link active">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+
+        <div class="theme-controls">
+            <button id="theme-toggle-btn" class="btn btn-secondary">🌙 Dark Mode</button>
+        </div>
+
+        <section class="banner-container">
+            <img src="images/banner.jpg" alt="Contact Banner" class="banner-img">
+            <div class="banner-text">
+                <h2>Contact Information</h2>
+                <p>Have questions? Reach out to our admin office or send us a direct message below.</p>
+            </div>
+        </section>
+
+        <div class="grid-layout">
+            
+            <section class="section-card col-1-2">
+                <h3>Our Location Details</h3>
+                
+                <div style="margin-bottom: 20px; line-height: 1.8;">
+                    <p>📍 <strong>School Address:</strong> House 12, Road 5, Dhanmondi, Dhaka-1209, Bangladesh</p>
+                    <p>📞 <strong>Phone Number:</strong> +880 2-9876543, +880 1712345678</p>
+                    <p>✉️ <strong>Email Address:</strong> <a href="mailto:info@abchighschool.edu">info@abchighschool.edu</a></p>
+                </div>
+
+                <div style="margin-bottom: 25px;">
+                    <h4>Social Media Links</h4>
+                    <p style="margin-top: 5px;">
+                        <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" style="padding: 5px 10px; font-size: 13px;">Facebook</a>
+                        <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" style="padding: 5px 10px; font-size: 13px;">Twitter</a>
+                        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" style="padding: 5px 10px; font-size: 13px;">Instagram</a>
+                    </p>
+                </div>
+
+                <h4>Find Us on Maps</h4>
+                <div class="map-container" style="margin-top: 10px;">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3652.2030061301077!2d90.37242851498114!3d23.739702984594957!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b8b1fd757edb%3A0x639a0ff3e5519ec3!2sDhanmondi%2C%20Dhaka!5e0!3m2!1sen!2sbd!4v1626248987483!5m2!1sen!2sbd" 
+                        loading="lazy">
+                    </iframe>
+                </div>
+            </section>
+
+            <section class="section-card col-1-2">
+                <h3>Send Message Form</h3>
+                
+                <form id="contact-form" novalidate>
+                    <div class="form-group">
+                        <label for="contact-name">Your Name *</label>
+                        <input type="text" id="contact-name" placeholder="Enter your full name" required>
+                        <span id="contact-name-error" class="error-msg"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="contact-email">Your Email Address *</label>
+                        <input type="email" id="contact-email" placeholder="e.g. parent@email.com" required>
+                        <span id="contact-email-error" class="error-msg"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="contact-message">Your Message *</label>
+                        <textarea id="contact-message" rows="5" placeholder="Type your message here..." required></textarea>
+                        <span id="contact-message-error" class="error-msg"></span>
+                    </div>
+
+                    <div class="form-actions">
+                        <button type="submit" class="btn">Send Message</button>
+                    </div>
+                </form>
+            </section>
+
+        </div>
+
+    </main>
+
+    <button id="scroll-top-btn" title="Go to top">▲</button>
+
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-section">
+                <h4>ABC High School</h4>
+                <p>Providing excellence in education since 1995.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="admission.html">Admissions</a></li>
+                    <li><a href="teachers.html">Our Teachers</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Affiliation</h4>
+                <p><a href="https://www.dhakaeducationboard.gov.bd/" target="_blank" rel="noopener noreferrer">Education Board website ↗</a></p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 ABC High School. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
