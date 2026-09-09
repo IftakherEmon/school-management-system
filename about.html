@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="About Us - ABC High School. History, mission, vision, and facilities.">
+    <title>About Us - School Management Website</title>
+    <link rel="icon" type="image/png" href="images/logo.png">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header id="main-header">
+        <div class="container header-container">
+            <div class="school-info">
+                <img src="images/logo.png" alt="ABC High School Logo" class="logo-img" title="Double click logo to dynamically change the banner image!">
+                <span class="school-title">ABC High School</span>
+            </div>
+            
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="about.html" class="nav-link active">About</a></li>
+                    <li><a href="admission.html" class="nav-link">Admission</a></li>
+                    <li><a href="teachers.html" class="nav-link">Teachers</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+
+        <div class="theme-controls">
+            <button id="theme-toggle-btn" class="btn btn-secondary">🌙 Dark Mode</button>
+        </div>
+
+        <section class="banner-container">
+            <img src="images/banner.jpg" alt="About ABC High School" class="banner-img">
+            <div class="banner-text">
+                <h2>About Our School</h2>
+                <p>Learn more about our rich history, facilities, co-curricular clubs, and educational vision.</p>
+            </div>
+        </section>
+
+        <section class="section-card">
+            <h2>School History</h2>
+            <p>
+                Founded in <strong>1995</strong>, ABC High School started with only a single building and a handful of classrooms. Over the last 30 years, it has expanded to become one of the premier high schools in the region, serving <span class="inline-span">1,250+ students</span>. Our graduates study in leading national and international universities.
+            </p>
+        </section>
+
+        <div class="grid-layout">
+            <section class="section-card col-1-2">
+                <h3>Our Vision</h3>
+                <p>To nurture creative minds, build integrity, and cultivate leadership skills in every student to prepare them for global opportunities.</p>
+            </section>
+            
+            <section class="section-card col-1-2">
+                <h3>Our Mission</h3>
+                <p>We provide a structured learning ecosystem that blends classroom teaching with sports, debate, science fairs, and community volunteering.</p>
+            </section>
+        </div>
+
+        <section class="section-card">
+            <h2>Our Facilities & Activities</h2>
+            <div class="grid-layout">
+                <div class="col-1-2">
+                    <h3>School Facilities (Ordered List)</h3>
+                    <ol style="margin-left: 20px; line-height: 1.8;">
+                        <li><strong>Modern Physics & Chemistry Labs:</strong> Outfitted with safety equipment.</li>
+                        <li><strong>ICT Lab:</strong> Equipped with 45 computers and high-speed internet.</li>
+                        <li><strong>Library:</strong> Home to 8,000+ print and digital educational books.</li>
+                        <li><strong>Indoor & Outdoor Sports Complex:</strong> Soccer, basketball, and table tennis.</li>
+                    </ol>
+                </div>
+                
+                <div class="col-1-2">
+                    <h3>Co-curricular Activities (Unordered List)</h3>
+                    <ul style="margin-left: 20px; line-height: 1.8;">
+                        <li>Weekly English & Bengali debates.</li>
+                        <li>Annual inter-school Math & Physics Olympiad training.</li>
+                        <li>National Science Fair projects development.</li>
+                        <li>Cultural arts exhibits and music recitals.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-card">
+            <h2>Active School Clubs</h2>
+            <p>The following clubs are loaded dynamically from a JavaScript array. Students can manage these clubs live:</p>
+            
+            <div class="club-manager">
+                <h4>Club Management Portal</h4>
+                <div style="display: flex; gap: 10px; margin-top: 10px; margin-bottom: 15px;">
+                    <input type="text" id="new-club-input" placeholder="Enter new club name..." style="padding: 6px;">
+                    <button id="add-club-btn" class="btn" style="padding: 6px 12px; font-size: 14px;">Add</button>
+                </div>
+                <ul id="clubs-list" style="list-style: none; padding: 0;">
+                </ul>
+            </div>
+        </section>
+
+        <section class="section-card" style="text-align: center;">
+            <h3>Education Board Affiliation</h3>
+            <p>ABC High School is recognized and affiliated under the National Board of Intermediate and Secondary Education.</p>
+            <p>
+                <a href="https://www.dhakaeducationboard.gov.bd/" target="_blank" rel="noopener noreferrer" class="btn">
+                    Visit Education Board Website ↗
+                </a>
+            </p>
+        </section>
+
+    </main>
+
+    <button id="scroll-top-btn" title="Go to top">▲</button>
+
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-section">
+                <h4>ABC High School</h4>
+                <p>Providing excellence in education since 1995.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="admission.html">Admissions</a></li>
+                    <li><a href="teachers.html">Our Teachers</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Affiliation</h4>
+                <p><a href="https://www.dhakaeducationboard.gov.bd/" target="_blank" rel="noopener noreferrer">Education Board website ↗</a></p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 ABC High School. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
